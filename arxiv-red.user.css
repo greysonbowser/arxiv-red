@@ -1,0 +1,38 @@
+/* ==UserStyle==
+@name         arXiv Red
+@namespace    github.com/greysonbowser/arxiv-red
+@version      1.0.1
+@description  Restores the classic red arXiv banner and logo
+@homepageURL  https://github.com/greysonbowser/arxiv-red
+@updateURL    https://raw.githubusercontent.com/greysonbowser/arxiv-red/main/arxiv-red.user.css
+@license      Unlicense
+==/UserStyle== */
+@-moz-document domain("arxiv.org") {
+  .ds-site-header {
+    --arxiv-open-blue: #f7dedd !important;
+    --arxiv-focus-ring-dark: #ffffff !important;
+    background: #b31b1b !important;
+  }
+
+  .ds-site-header-logo img {
+    content: url("https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-one-color-white.svg") !important;
+  }
+
+  .ds-site-header-nav a,
+  .ds-site-header-nav a:visited,
+  .ds-site-header-nav button,
+  .ds-site-header-nav-toggle {
+    color: rgba(255, 255, 255, 0.85) !important;
+  }
+
+  .ds-site-header-nav a:hover,
+  .ds-site-header-nav button:hover,
+  .ds-site-header-nav-toggle:hover {
+    background: #8f1414 !important;
+    color: #ffffff !important;
+  }
+
+  .ds-site-header-divider {
+    background: rgba(255, 255, 255, 0.35) !important;
+  }
+}
